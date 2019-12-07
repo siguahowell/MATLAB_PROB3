@@ -14,10 +14,11 @@ end
 %----------get the lowest norm error------%
 [values,Index] = min(nurm);
 %------------get the index of the lowest error-----%
+clear values;
 Index=min(Index);
 coefficients = polyfit(X,Y,Index);
 %----------outputs----------%
 disp('The coefficients are: %d \n ')
 disp(coefficients)
-disp('according to the nurm:')
+disp('according to the norm:')
 disp(nurm)
