@@ -1,4 +1,4 @@
-function PROB3(x)
+function Untitled(x)
 X = x(1:10,1);
 Y = x(1:10,2);
 %-----Pre-allocation&Initialization----%
@@ -12,9 +12,9 @@ while i <= 10
     i=i+1;
 end
 %----------get the lowest norm error------%
-[higher,Index] = min(nurm);
+[values,Index] = min(nurm);
 %------------get the index of the lowest error-----%
-clear higher
+Index=min(Index);
 coefficients = polyfit(X,Y,Index);
 %----------outputs----------%
 disp('The coefficients are: %d \n ')
