@@ -1,4 +1,4 @@
-function Untitled(x)
+function prob3(x)
 X = x(1:10,1);
 Y = x(1:10,2);
 %-----Pre-allocation&Initialization----%
